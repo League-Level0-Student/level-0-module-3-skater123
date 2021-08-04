@@ -8,15 +8,19 @@ void setup() {
 
 void draw() {
   for (int i = 1; i <15; i++){
+    if (i %2==0){
+      
         fill(0,202,225);
+        
     }
-    else {
+    else  {
 fill(207,0,225);
     }
 ellipse(i*15,i*15,40,40);
 // First run the program and you should see a flower.  
   }
-  
+  drawBeeFace(15*15,15*15);
+}
   
 /* Then, use a loop to make a body for the Bee! 
 (see the image on the recipe, it's a diagonal line of circles)
